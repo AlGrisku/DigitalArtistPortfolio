@@ -47,5 +47,5 @@ btn4.addEventListener('click', ()=>{
 })
 
 document.getElementById('continue').onclick = function () {
-    location.href = "school_series_003.html";
+    location.href = "../Pages/School-Series/school_series_003.html";
 };
