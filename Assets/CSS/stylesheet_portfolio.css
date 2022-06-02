@@ -1,0 +1,91 @@
+img
+{
+    display: block;
+}
+
+/* Start Collage */
+
+#collage .collage
+{
+    width: 100%;
+}
+
+#collage .collage-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-wrap: wrap;
+    margin-bottom: 80px
+}
+
+#collage .collage-wrapper .collage-img
+{
+    flex-basis: 100%;
+    width: 100%;
+}
+
+/* End Collage */
+
+/* Start Media Query for Tablet */
+
+@media only screen and (min-width: 768px)
+{
+
+    #collage .collage-wrapper
+    {
+        flex-direction: row;
+    }
+    
+    #collage .collage-wrapper .collage-img
+    {
+        flex-basis: 50%;
+        width: 50%;
+        height: 350px;
+    }
+
+}
+
+/* End Media Query for Tablet */
+
+/* Start Media Query for Desktop*/
+
+@media only screen and (min-width: 1200px)
+{
+
+    #collage .collage-wrapper .collage-img
+    {
+        flex-basis: 33%;
+        width: 33%;
+        height: 450px;
+        transition: 0.3s ease;
+        position: relative;
+        transition: 0.3s ease;
+    }
+    #collage .collage-wrapper .collage-img::after
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.50);
+        transition: 0.3s ease;
+    }
+
+    #collage .collage-wrapper .collage-img:hover
+    {
+        transform: scale(1.1);
+        z-index: 1;
+    }
+    #collage .collage-wrapper .collage-img:hover::after
+    {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+}
+
+/* End Media Query for Desktop */

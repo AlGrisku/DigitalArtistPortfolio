@@ -1,0 +1,154 @@
+.title
+{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.title::before
+{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    background-color: #000;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.title::after
+{
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 3px;
+    background-color: #000;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* Start Read */
+
+#read .read
+{
+    flex-direction: column;
+}
+
+#read .pages-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+#read .pages-wrapper .page
+{
+    margin: 30px 0;
+    position: relative;
+}
+
+#read .pages-wrapper .page img
+{
+    border: 2px solid #000;
+    pointer-events: none;
+}
+
+/* End Read */
+
+/* Start Buttons */
+
+#buttons .buttons
+{
+    width: 100%;
+}
+
+#buttons .buttons-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 85%;
+}
+
+#buttons .buttons-wrapper a
+{
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: black;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0 3px 2px 1px #D8D8D8;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+#buttons .buttons-wrapper a:hover
+{
+    background-color: rgb(187, 187, 187);
+    transform: scale(0.9);
+    box-shadow: none;
+}
+
+/* End Buttons */
+
+/* Start Media Query for Tablet */
+
+@media only screen and (min-width: 768px)
+{
+
+    /* Start Buttons Tablet */
+
+    #buttons .buttons-wrapper
+    {
+        width: 95%;
+    }
+
+    #buttons .buttons-wrapper a
+    {
+        padding: 10px 15px;
+        font-size: 1.5rem;
+    }
+
+    /* End Buttons Tablet */
+
+}
+
+/* End Media Query for Tablet*/
+
+/* Start Media Query for Desktop*/
+
+@media only screen and (min-width: 1200px)
+{
+    
+    /* Start Read Desktop */
+
+    #read .pages-wrapper .page
+    {
+        width: 650px;
+        height: 650px;
+    }
+
+    /* End Read Desktop */
+
+    /* Start Buttons Desktop */
+
+    #buttons .buttons-wrapper
+    {
+        width: 52%;
+    }
+
+    #buttons .buttons-wrapper a
+    {
+        padding: 10px 15px;
+        font-size: 1.3rem;
+    }
+
+    /* End Buttons Desktop */
+}

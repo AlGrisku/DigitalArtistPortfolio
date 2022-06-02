@@ -1,0 +1,368 @@
+/* Start Series */
+
+#series .series
+{
+    min-height: auto;
+}
+
+#series .series .series-header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 170px 20px 0 20px;
+    flex-wrap: wrap;
+}
+
+#series .series .series-header .series-img
+{
+    width: 85%;
+    height: 350px;
+    position: relative;
+}
+#series .series .series-header .series-img img
+{
+    border-radius: 0 50px 0 50px;
+}
+#series .series .series-header .series-img::before
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FAE1DB;
+    border-radius: 0 50px 0 50px;
+    z-index: -1;
+    left: -8%;
+    bottom: -8%;
+}
+#series .series .series-header .series-img::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FAE1DB;
+    border-radius: 0 50px 0 50px;
+    z-index: -1;
+    right: -8%;
+    top: -8%;
+}
+
+#series .series .series-header .series-info
+{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#series .series .series-header .series-info h2
+{
+    background-color: #FAE1DB;
+    color: #DE6B66;
+    padding: 20px 5px;
+    font-size: 1.7rem;
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+}
+
+#series .series .series-header .series-info h3
+{
+    margin-top: 30px;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+#series .series .series-header .series-info p
+{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#series .series .series-header .series-info .social-media
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#series .series .series-header .series-info .social-media .icon-wrapper
+{
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px 0 10px;
+}
+
+/* End Series */
+
+/* Start Chapters */
+
+#chapter-sec .chapter-sec
+{
+    min-height: auto;
+}
+
+#chapter-sec .chapters-wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+    margin: 50px 20px 0 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+#chapter-sec .chapters-wrapper h3
+{
+    font-size: 1.3rem;
+    padding: 10px;
+    letter-spacing: 2px;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    margin-bottom: 25px;
+}
+
+#chapter-sec .chapters-wrapper h3 span
+{
+    color: #DE6B66;
+}
+
+#chapter-sec .chapters-wrapper .chapters a
+{
+    display: block;
+    width: 100%;
+    color: #000;
+}
+
+#chapter-sec .chapters-wrapper .chapters a:visited
+{
+    color: #000;
+}
+
+#chapter-sec .chapters-wrapper .chapters
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#chapter-sec .chapters .chapter-part
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+}
+#chapter-sec .chapters .chapter-part:last-child
+{
+    margin-bottom: 25px;
+}
+
+#chapter-sec .chapters .chapter-part .img-wrapper
+{
+    width: 100px;
+    height: 100px;
+}
+
+#chapter-sec .chapters .chapter-part .text
+{
+    margin-left: 10px;
+    text-align: left;
+}
+
+#chapter-sec .chapters .chapter-part .text h4
+{
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+#chapter-sec .chapters .chapter-part .text p
+{
+    padding: 0;
+    font-size: 1rem;
+}
+
+/* End Chapters */
+
+/* Start Recommend */
+
+#recommend .border-up
+{
+    border: none;
+}
+
+#recommend .recommend .recommend-cta
+{
+    width: 90%;
+}
+
+/* End Recommend */
+
+/* Start Media Query for Tablet */
+
+@media only screen and (min-width: 768px)
+{
+
+    /* Start Series Tablet */
+
+    #series .series .series-header
+    {
+        width: 100%;
+        margin: 200px 40px 0 40px;
+        flex-wrap: wrap;
+    }
+
+    #chapter-sec .chapters-wrapper h3
+    {
+        font-size: 1.4rem;
+    }
+
+    #series .series .series-header .series-img
+    {
+        width: 70%;
+        height: 400px;
+    }
+
+    #series .series .series-header .series-info
+    {
+        margin-top: 80px;
+        align-items: flex-end;
+    }
+
+    #series .series .series-header .series-info h3
+    {
+        font-size: 1.3rem;
+    }
+
+    #series .series .series-header .series-info p
+    {
+        text-align: left;
+    }
+
+    /* End Series Tablet */
+
+    /* Start Chapters Tablet */
+
+    #chapter-sec .chapters-wrapper
+    {
+        width: 90%;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    #chapter-sec .chapters .chapter-part .img-wrapper
+    {
+        width: 150px;
+        height: 150px;
+    }
+
+    #chapter-sec .chapters .chapter-part .text h4
+    {
+        font-size: 1.5rem;
+    }
+    
+    #chapter-sec .chapters .chapter-part .text p
+    {
+        font-size: 1.3rem;
+    }
+
+    /* End Chapters Tablet */
+
+    /* Start Recommend Tablet */
+
+    #recommend .recommend .recommend-cta
+    {
+        width: 60%;
+    }
+
+    /* End Recommend Tablet */
+    
+}
+
+/* End Media Query for Tablet */
+
+/* Start Media Query for Desktop*/
+
+@media only screen and (min-width: 1200px)
+{
+
+    /* Start Series Desktop */
+    
+    #series .series
+    {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    #series .series .series-header
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 190px;
+    }
+
+    #series .series .series-header .series-img
+    {
+        width: 40%;
+        height: 450px;
+    }
+
+    #series .series .series-header .series-info
+    {
+        flex-basis: 50%;
+    }
+
+    #series .series .series-header .series-info .social-media
+    {
+        bottom: 0;
+        right: 0;
+    }
+
+    /* End Series Desktop */
+    
+    /* Start Chapter Desktop */
+
+    #chapter-sec .chapters-wrapper
+    {
+        width: 1200px;
+        margin-top: 80px;
+    }
+
+    #chapter-sec .chapters .chapter-part
+    {
+        padding: 10px 20px;
+    }
+
+    #chapter-sec .chapters .chapter-part:hover
+    {
+        cursor: pointer;
+        background: linear-gradient(to right,#FAE1DB, #fcece9, #fff);
+    }
+
+    /* End Chapter Desktop */
+
+    /* Start Recommend Desktop */
+
+    #recommend .recommend .recommend-cta
+    {
+        width: 35%;
+    }
+
+    /* End Recommend Desktop */
+    
+}
+
+/* End Media Query for Desktop */
