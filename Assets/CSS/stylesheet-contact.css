@@ -1,0 +1,148 @@
+h3
+{
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+
+/* Start Contact */
+
+#contact .contact .contact-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin-top: 200px;
+    margin-bottom: 80px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#contact .contact-wrapper .contact-columns-wrapper
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact .contact-wrapper .contact-columns-wrapper .left-column
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background-color: #DE6B66;
+    height: 300px;
+    z-index: 1;
+}
+
+#contact .contact-wrapper .contact-columns-wrapper .left-column ul
+{
+    list-style: circle;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+#contact .contact-wrapper .contact-columns-wrapper .left-column ul *
+{
+    margin-bottom: 20px;
+}
+#contact .contact-wrapper .contact-columns-wrapper .left-column ul:last-child
+{
+    margin-bottom: 0;
+}
+
+#contact .contact-wrapper .contact-columns-wrapper .right-column
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#contact .contact-wrapper .contact-columns-wrapper .right-column h3
+{
+    margin-top: 10px;
+}
+
+#contact .right-column form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+#contact .right-column form *
+{
+    margin-bottom: 20px;
+}
+
+#contact .right-column form:last-child
+{
+    margin-bottom: 0;
+}
+
+#contact .right-column form input[type=text],
+#contact .right-column form input[type=email]
+{
+    width: 100%;
+    height: 80px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.10);
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+#contact .right-column form textarea
+{
+    width: 100%;
+    height: 160px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.10);
+    border-radius: 15px;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+    resize: none;
+    letter-spacing: 2px;
+}
+
+#contact .right-column form input[type=text]:focus,
+#contact .right-column form input[type=email]:focus,
+#contact .right-column form textarea:focus
+{
+    background-color: #FAE1DB;
+    outline-color: #DE6B66;
+}
+
+#contact .right-column .submit
+{
+    display: block;
+    box-shadow: none;
+    width: 40%;
+    background-color: #DE6B66;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 15px;
+    margin-left: -1px;
+}
+
+/* End Contact */
