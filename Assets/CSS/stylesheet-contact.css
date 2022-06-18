@@ -146,3 +146,122 @@ h3
 }
 
 /* End Contact */
+
+/* Start Received */
+
+#received .received
+{
+    min-height: 100vh;
+}
+
+#received .received .wrapper
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    background-color: #FADED9;
+    border: 6px solid #F89286;
+    border-radius: 20px;
+    padding: 50px 0 50px 0;
+}
+
+#received .received .wrapper h1
+{
+    font-size: 2.3rem;
+}
+
+#received .received .wrapper p
+{
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* End Received */
+
+/* Start Media Query for Tablet */
+
+@media only screen and (min-width: 768px)
+{
+
+    #contact .contact
+    {
+        height: 100vh;
+    }
+
+    #received .received .wrapper .cta
+    {
+        width: 50%;
+    }
+
+}
+
+/* End Media Query for Tablet */
+
+/* Start Media Query for Desktop*/
+
+@media only screen and (min-width: 1200px)
+{
+
+    #contact .contact .contact-wrapper
+    {
+        width: 1000px;
+        margin-left: 170px;
+    }
+
+    #contact .contact-wrapper .contact-columns-wrapper
+    {
+        flex-direction: row;
+        padding: 30px 0 30px 0;
+    }
+
+    #contact .contact-wrapper .contact-columns-wrapper .left-column
+    {
+        width: 50%;
+        height: 400px;
+        margin-left: -170px;
+        margin-right: 100px;
+        align-items: center;
+    }
+
+    #contact .contact-wrapper .contact-columns-wrapper .left-column h3
+    {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    #contact .right-column form input[type=text],
+    #contact .right-column form input[type=email]
+    {
+        height: 50px;
+        width: 80%;
+    }
+
+    #contact .right-column form textarea
+    {
+        height: 140px;
+        width: 80%;
+    }
+
+    #contact .right-column .submit
+    {
+        width: 25%;
+    }
+
+    #received .received .wrapper
+    {
+        width: 70%;
+    }
+
+    #received .received .wrapper .cta
+    {
+        width: 30%;
+    }
+    
+}
+
+/* End Media Query for Desktop */
